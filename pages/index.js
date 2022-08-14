@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
+import NumPicker from '../components/NumPicker'
+// import PickColor from '../components/PickColors'
 
 export default function Home() {
   return (
@@ -11,7 +13,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-       
+				{/* {PickColor({name: "Background", title: "Background Color"})}
+				{PickColor({name: "circleColorOne", title: "First Circle Color"})}
+				{PickColor({name: "circleColortwo", title: "Second Circle Color"})}
+				{PickColor({name: " firstText", title: "First Text Color"})}
+				{PickColor({name: " secondText", title: "Second Text Color"})} */}
+				<NumPicker />
       </main>
     </div>
   )
